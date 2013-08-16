@@ -9,7 +9,7 @@ using CrochetCatPause.Models;
 
 namespace CrochetCatPause.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    //[Authorize(Roles = "Administrator")]
     public class ShowController : Controller
     {
         private CatEntities db = new CatEntities();
