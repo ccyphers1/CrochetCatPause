@@ -1,0 +1,59 @@
+﻿@model CrochetCatPause.Models.UpcomingShow
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>UpcomingShow</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ShowDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ShowDate)
+            @Html.ValidationMessageFor(model => model.ShowDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.City)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.City)
+            @Html.ValidationMessageFor(model => model.City)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.State)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.State)
+            @Html.ValidationMessageFor(model => model.State)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Venue)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Venue)
+            @Html.ValidationMessageFor(model => model.Venue)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

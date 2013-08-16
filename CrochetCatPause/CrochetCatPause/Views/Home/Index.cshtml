@@ -1,0 +1,34 @@
+﻿@model CrochetCatPause.ViewModels.HomePageViewModel
+@*model IEnumerable<CrochetCatPause.Models.BlogPost>*@
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="blogContainer">
+    <h1>News</h1>
+    @foreach (var item in Model.BlogPosts) {
+    if (item.Published == true) {
+    <div class="blogPost">
+        <h4 class="blogTitle">@Html.DisplayFor(modelItem => item.Title)</h4>
+        <p class="blogBody">@item.Content</p>
+        <p class="blogInfo">by @Html.DisplayFor(modelItem => item.Author) 
+            on @item.PostTime
+        </p>
+        <hr />
+    </div>
+    }
+    }
+</div>
+
+<div class="showsContainer">
+    <h1>Upcoming Shows</h1>
+    @foreach (var item in Model.UpcomingShows) {
+        <div class="showPost">
+            <p class="showDate">@item.ShowDate</p>
+            <p class="showLoc">@item.City @item.State</p>
+            <p class="showVenue">@item.Venue</p>
+        </div>
+        <hr />
+    }
+</div>

@@ -1,0 +1,43 @@
+﻿@model CrochetCatPause.Models.UpcomingShow
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>UpcomingShow</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ShowDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ShowDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.State)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Venue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Venue)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
