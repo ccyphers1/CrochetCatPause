@@ -1,0 +1,19 @@
+﻿body {
+}
+
+ul#menu {
+    list-style: none;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
