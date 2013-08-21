@@ -1,12 +1,21 @@
 ﻿body {
+    background: #010202;
+    color: white;
+}
+
+header {
 }
 
 ul#menu {
     list-style: none;
+    position: absolute;
+    bottom: 0;
 }
 
 ul#menu li {
     display: inline;
+    margin: 27px;
+    font-size: 30px;
 }
 
 ul#menu li a {
@@ -17,3 +26,9 @@ ul#menu li a {
     margin: 0 auto;
     max-width: 960px;
 }
+
+    .content-wrapper nav {
+        background: url(images/headerthing.jpg);
+        height: 315px;
+        position: relative;
+    }
