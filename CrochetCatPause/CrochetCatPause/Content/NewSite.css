@@ -1,6 +1,7 @@
 ﻿body {
     background: #010202;
     color: white;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
 
 header {
@@ -14,13 +15,22 @@ ul#menu {
 
 ul#menu li {
     display: inline;
-    margin: 27px;
-    font-size: 30px;
+    margin: 25px;
+    font-size: 25px;
 }
 
 ul#menu li a {
     text-decoration: none;
+    font-weight: 600;
 }
+
+    ul#menu li a:visited, ul#menu li a:link, ul#menu li a:active {
+        color: #885544
+    }
+
+    ul#menu li a:hover {
+        color: #803010;
+    }
 
 .content-wrapper {
     margin: 0 auto;
